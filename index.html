@@ -1,71 +1,441 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
-<meta charset="utf-8"/>
-<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>山喜咖啡｜杯有欢喜，心有山喜</title>
-<meta name="description" content="云南楚雄山喜咖啡。山里面，种着我喜欢的东西。"/>
-<link rel="shortcut icon" href="favicon.svg"/>
-<link rel="icon" href="favicon.svg"/>
-<link rel="preload" href="images/hero-sign.jpg" as="image"/>
-<style>
-/*! tailwindcss v4.2.1 | MIT License | https://tailwindcss.com */
-@layer theme{:root,:host{--font-sans:ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";--font-mono:ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;--spacing:.25rem;--default-font-family:var(--font-sans);--default-mono-font-family:var(--font-mono)}}@layer base{*,:after,:before,::backdrop{box-sizing:border-box;border:0 solid;margin:0;padding:0}::file-selector-button{box-sizing:border-box;border:0 solid;margin:0;padding:0}html,:host{-webkit-text-size-adjust:100%;tab-size:4;line-height:1.5;font-family:var(--default-font-family,ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji");font-feature-settings:var(--default-font-feature-settings,normal);font-variation-settings:var(--default-font-variation-settings,normal);-webkit-tap-highlight-color:transparent}hr{height:0;color:inherit;border-top-width:1px}abbr:where([title]){-webkit-text-decoration:underline dotted;text-decoration:underline dotted}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit}a{color:inherit;-webkit-text-decoration:inherit;text-decoration:inherit}b,strong{font-weight:bolder}code,kbd,samp,pre{font-family:var(--default-mono-font-family,ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace);font-feature-settings:var(--default-mono-font-feature-settings,normal);font-variation-settings:var(--default-mono-font-variation-settings,normal);font-size:1em}small{font-size:80%}sub,sup{vertical-align:baseline;font-size:75%;line-height:0;position:relative}sub{bottom:-.25em}sup{top:-.5em}table{text-indent:0;border-color:inherit;border-collapse:collapse}:-moz-focusring{outline:auto}progress{vertical-align:baseline}summary{display:list-item}ol,ul,menu{list-style:none}img,svg,video,canvas,audio,iframe,embed,object{vertical-align:middle;display:block}img,video{max-width:100%;height:auto}button,input,select,optgroup,textarea{font:inherit;font-feature-settings:inherit;font-variation-settings:inherit;letter-spacing:inherit;color:inherit;opacity:1;background-color:#0000;border-radius:0}::file-selector-button{font:inherit;font-feature-settings:inherit;font-variation-settings:inherit;letter-spacing:inherit;color:inherit;opacity:1;background-color:#0000;border-radius:0}:where(select:is([multiple],[size])) optgroup{font-weight:bolder}:where(select:is([multiple],[size])) optgroup option{padding-inline-start:20px}::file-selector-button{margin-inline-end:4px}::placeholder{opacity:1}@supports (not ((-webkit-appearance:-apple-pay-button))) or (contain-intrinsic-size:1px){::placeholder{color:currentColor}@supports (color:color-mix(in lab, red, red)){::placeholder{color:color-mix(in oklab, currentcolor 50%, transparent)}}}textarea{resize:vertical}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-date-and-time-value{min-height:1lh;text-align:inherit}::-webkit-datetime-edit{display:inline-flex}::-webkit-datetime-edit-fields-wrapper{padding:0}::-webkit-datetime-edit{padding-block:0}::-webkit-datetime-edit-year-field{padding-block:0}::-webkit-datetime-edit-month-field{padding-block:0}::-webkit-datetime-edit-day-field{padding-block:0}::-webkit-datetime-edit-hour-field{padding-block:0}::-webkit-datetime-edit-minute-field{padding-block:0}::-webkit-datetime-edit-second-field{padding-block:0}::-webkit-datetime-edit-millisecond-field{padding-block:0}::-webkit-datetime-edit-meridiem-field{padding-block:0}::-webkit-calendar-picker-indicator{line-height:1}:-moz-ui-invalid{box-shadow:none}button,input:where([type=button],[type=reset],[type=submit]){appearance:button}::file-selector-button{appearance:button}::-webkit-inner-spin-button{height:auto}::-webkit-outer-spin-button{height:auto}[hidden]:where(:not([hidden=until-found])){display:none!important}}@layer components;@layer utilities{.visible{visibility:visible}.relative{position:relative}.start{inset-inline-start:var(--spacing)}.table{display:table}}:root{--serif:"Noto Serif SC", "Source Han Serif SC", "Songti SC", STSong, serif;--sans:"Noto Sans SC", "Source Han Sans SC", "PingFang SC", "Microsoft YaHei", sans-serif}*{box-sizing:border-box}html{scroll-behavior:smooth;background:#f3eee5}body{color:#6f321f;font-family:var(--sans);background:#f3eee5;margin:0}a{color:inherit;text-decoration:none}img{max-width:100%;display:block}.site{--paper:#f3eee5;--paper-2:#eadcca;--ink:#6f321f;--ink-soft:#8b6657;--accent:#c15b32;--accent-light:#e5a079;--line:#6f321f33;background:var(--paper);min-height:100vh;color:var(--ink);overflow:hidden}.skip-link{z-index:100;background:var(--ink);color:var(--paper);padding:10px 14px;position:fixed;top:8px;left:8px;transform:translateY(-140%)}.skip-link:focus{transform:translateY(0)}.site-header{z-index:20;border-bottom:1px solid var(--line);-webkit-backdrop-filter:blur(14px);backdrop-filter:blur(14px);background:#f3eee5eb;grid-template-columns:1fr auto 1fr;align-items:center;min-height:86px;padding:0 3.2vw;display:grid;position:relative}.brand{align-items:baseline;gap:12px;width:fit-content;display:inline-flex}.brand-cn{font-family:var(--serif);letter-spacing:.08em;font-size:27px;font-weight:650}.brand-en,.eyebrow,.story-kicker,.drink-en,.hero-visual figcaption,.section-marker,.visit-details span{letter-spacing:.17em;text-transform:uppercase;font-size:10px}.brand-en{color:var(--ink-soft)}.main-nav{gap:clamp(18px,3vw,46px);font-size:13px;display:flex}.main-nav a{padding:31px 0 26px;position:relative}.main-nav a:after{content:"";transform-origin:100%;background:currentColor;height:1px;transition:transform .2s;position:absolute;bottom:22px;left:0;right:0;transform:scaleX(0)}.main-nav a:hover:after,.main-nav a:focus-visible:after{transform-origin:0;transform:scaleX(1)}.header-note{color:var(--ink-soft);letter-spacing:.16em;justify-self:end;margin:0;font-size:10px}.hero{border-bottom:1px solid var(--line);grid-template-columns:repeat(12,minmax(0,1fr));gap:2.5vw;min-height:calc(100svh - 86px);padding:5.2vw 3.2vw 3.2vw;display:grid;position:relative}.hero:before{content:"";background:var(--line);width:1px;position:absolute;top:0;bottom:0;left:38%}.hero-copy{flex-direction:column;grid-column:1/5;align-items:flex-start;padding:2vw 1.5vw 1vw 0;display:flex}.eyebrow,.story-kicker{color:var(--ink-soft);margin:0}.hero h1,.story h2,.section-heading h2,.team-intro h2,.visit h2{font-family:var(--serif);margin:0;font-weight:500}.hero h1{letter-spacing:-.055em;margin-top:clamp(46px,8vh,92px);font-size:clamp(48px,5.2vw,82px);line-height:1.12}.hero-intro{max-width:430px;color:var(--ink-soft);font-family:var(--serif);margin:auto 0 34px;font-size:clamp(15px,1.1vw,18px);line-height:2}.text-link{border-top:1px solid var(--ink);border-bottom:1px solid var(--ink);justify-content:space-between;align-items:center;width:min(100%,300px);padding:13px 0;font-size:12px;display:flex}.text-link span{font-size:18px}.hero-visual{grid-column:6/13;align-self:center;margin:0}.photo-crop{overflow:hidden}.photo-crop img{width:100%;max-width:none;height:auto}.photo-crop-hero{aspect-ratio:2.2}.photo-crop-hero img{width:102%;margin-left:-1%}.photo-crop-garden{aspect-ratio:.9}.hero-visual figcaption{color:var(--ink-soft);justify-content:space-between;gap:20px;padding:13px 0 0;display:flex}.section-shell{border-bottom:1px solid var(--line);grid-template-columns:repeat(12,minmax(0,1fr));gap:2.5vw;padding:clamp(90px,10vw,160px) 3.2vw;display:grid}.section-marker{color:var(--ink-soft);flex-direction:column;grid-column:1/3;gap:16px;display:flex}.section-marker span:first-child{border-bottom:1px solid var(--accent);width:fit-content;color:var(--accent);padding-bottom:8px}.story-content{grid-column:3/8}.story-content h2{letter-spacing:-.055em;margin-top:28px;font-size:clamp(44px,5.1vw,78px);line-height:1.2}.story-columns{color:var(--ink-soft);font-family:var(--serif);grid-template-columns:1fr 1fr;gap:2.2vw;margin-top:clamp(48px,6vw,88px);font-size:15px;line-height:2;display:grid}.story-columns p{margin:0}.story-visual{grid-column:8/13;align-self:end;margin:clamp(140px,15vw,230px) 0 0}.story-visual figcaption{color:var(--ink-soft);letter-spacing:.14em;margin-top:12px;font-size:10px}.letters{background:var(--ink);color:var(--paper);grid-template-columns:repeat(12,minmax(0,1fr));gap:2.5vw;padding:clamp(90px,9vw,150px) 3.2vw;display:grid}.letters .eyebrow{color:#f3eee594}.letters-lead{grid-column:1/7}.letters blockquote{font-family:var(--serif);letter-spacing:-.045em;margin:clamp(34px,5vw,72px) 0 38px;font-size:clamp(38px,4.4vw,68px);font-weight:400;line-height:1.38}.letters-lead>p:last-child{color:#f3eee5a8;max-width:580px;font-family:var(--serif);margin:0;font-size:16px;line-height:2}.letter-list{border-top:1px solid #f3eee53d;grid-column:8/13;align-self:end}.letter-list article{border-bottom:1px solid #f3eee53d;grid-template-columns:42px 150px 1fr;gap:16px;padding:28px 0;display:grid}.letter-list span{color:var(--accent-light);letter-spacing:.16em;font-size:10px}.letter-list h3{font-family:var(--serif);margin:0;font-size:18px;font-weight:500}.letter-list p{color:#f3eee59e;margin:0;font-size:13px;line-height:1.9}.pour-moment{border-bottom:1px solid var(--line);background:#ddd1c1;grid-template-columns:minmax(0,.82fr) minmax(0,1.18fr);align-items:center;gap:7vw;padding:clamp(82px,9vw,146px) 9vw;display:grid}.pour-moment figure{margin:0}.pour-moment figure img{width:100%;height:auto}.pour-moment figcaption{color:var(--ink-soft);letter-spacing:.15em;margin-top:13px;font-size:10px}.pour-copy{max-width:660px}.pour-copy h2{font-family:var(--serif);letter-spacing:-.055em;margin:28px 0 0;font-size:clamp(48px,5.6vw,84px);font-weight:500;line-height:1.17}.pour-copy>p:last-child{max-width:520px;color:var(--ink-soft);font-family:var(--serif);margin:56px 0 0;font-size:16px;line-height:2}.section-heading{grid-column:3/8}.section-heading h2{letter-spacing:-.05em;margin-top:26px;font-size:clamp(42px,4.8vw,72px);line-height:1.24}.section-heading>p:last-child{max-width:560px;color:var(--ink-soft);font-family:var(--serif);margin:34px 0 0;font-size:15px;line-height:2}.drink-grid{grid-column:3/13;grid-template-columns:repeat(2,minmax(0,1fr));gap:clamp(62px,7vw,108px) 3.2vw;margin-top:clamp(80px,9vw,140px);display:grid}.drink-card{min-width:0}.drink-card:nth-child(2n){transform:translateY(90px)}.drink-media{background:var(--paper-2);position:relative;overflow:hidden}.drink-media img{width:100%;height:auto}.natural-square .drink-media{aspect-ratio:1}.natural-square .drink-media img{object-fit:cover;object-position:center top;width:100%;height:100%}.crop-left .drink-media{aspect-ratio:4/3}.crop-left .drink-media img{object-fit:cover;object-position:0% 50%;transform-origin:0;width:100%;height:100%;transform:scale(1.38)}.drink-index{background:var(--paper);width:42px;height:42px;color:var(--accent);letter-spacing:.12em;border-radius:50%;place-items:center;font-size:10px;display:grid;position:absolute;bottom:12px;right:14px}.drink-title-row{border-bottom:1px solid var(--line);justify-content:space-between;align-items:baseline;gap:18px;margin-top:22px;padding-bottom:15px;display:flex}.drink-title-row h3{font-family:var(--serif);margin:0;font-size:clamp(24px,2vw,32px);font-weight:500}.drink-title-row span{color:var(--accent);font-family:var(--serif);flex:none;font-size:18px}.drink-en{color:var(--ink-soft);margin:14px 0 0}.drink-note{max-width:520px;color:var(--ink-soft);font-family:var(--serif);margin:18px 0 0;font-size:14px;line-height:1.9}.team{background:#ebe3d8}.team-intro{grid-column:3/13}.team-intro h2{letter-spacing:-.055em;margin-top:26px;font-size:clamp(44px,5vw,76px);line-height:1.2}.team-copy{max-width:920px;color:var(--ink-soft);font-family:var(--serif);grid-template-columns:repeat(2,minmax(0,1fr));gap:3vw;margin:54px 0 0;font-size:15px;line-height:2;display:grid}.team-copy p{margin:0}.team-gallery{grid-column:1/13;grid-template-columns:repeat(4,minmax(0,1fr));align-items:start;gap:2.4vw;margin-top:clamp(80px,9vw,140px);display:grid}.team-gallery figure{margin:0}.team-gallery figure:nth-child(2){margin-top:120px}.team-gallery figure:nth-child(3){margin-top:34px}.team-gallery figure:nth-child(4){margin-top:156px}.team-photo-frame{background:#d6cabb;overflow:hidden}.team-photo-frame img{width:100%;height:auto}.team-portrait-full .team-photo-frame{aspect-ratio:.71}.team-portrait-full .team-photo-frame img,.team-barista-work .team-photo-frame img{object-fit:cover;object-position:center top;width:100%;height:100%}.team-barista-work .team-photo-frame{aspect-ratio:.84}.team-collage-half .team-photo-frame{aspect-ratio:9/8}.team-collage-half .team-photo-frame img{width:100%;height:auto;display:block}.team-collage-bottom .team-photo-frame img{transform:translateY(-50%)}.team-collage-bottom .team-photo-frame{aspect-ratio:1.18}.team-gallery figcaption{color:var(--ink-soft);font-family:var(--serif);gap:16px;margin-top:14px;font-size:13px;line-height:1.7;display:flex}.team-gallery figcaption span{color:var(--accent);font-family:var(--sans);letter-spacing:.14em;font-size:10px}.team-values{border-top:1px solid var(--line);grid-column:3/13;grid-template-columns:repeat(3,minmax(0,1fr));margin-top:clamp(80px,9vw,140px);display:grid}.team-values article{border-right:1px solid var(--line);min-height:180px;padding:24px 28px 20px 0}.team-values article+article{padding-left:28px}.team-values article:last-child{border-right:0}.team-values span{color:var(--accent);font-family:var(--serif);font-size:26px}.team-values p{max-width:260px;color:var(--ink-soft);margin:42px 0 0;font-size:13px;line-height:1.8}.visit{background:var(--accent);color:#fff6eb;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:6vw;padding:clamp(88px,9vw,148px) 3.2vw;display:grid}.visit-copy{align-self:center;padding-left:6vw}.visit .eyebrow{color:#fff6ebad}.visit h2{letter-spacing:-.06em;margin-top:28px;font-size:clamp(52px,6vw,90px);line-height:1.1}.visit-slogan{font-family:var(--serif);margin:24px 0 0;font-size:21px}.visit-description{color:#fff6ebc2;max-width:520px;font-family:var(--serif);margin:48px 0 0;font-size:15px;line-height:2}.visit-details{border-top:1px solid #fff6eb61;grid-template-columns:1.25fr .75fr;gap:26px;margin-top:58px;padding-top:22px;display:grid}.visit-details span{color:#fff6eb9e}.visit-details p{font-family:var(--serif);margin:13px 0 0;font-size:14px;line-height:1.85}.visit-photo{align-self:center;margin:0}.photo-crop-visit{aspect-ratio:.79}.photo-crop-visit img{width:105%;margin-left:-2.5%}.visit-photo figcaption{color:#fff6eba3;letter-spacing:.15em;margin-top:13px;font-size:10px}footer{color:#f3eee5;background:#6f321f;grid-template-columns:1fr auto 1fr;align-items:center;min-height:150px;padding:0 3.2vw;display:grid}.footer-brand{font-family:var(--serif);font-size:26px}.footer-brand span{color:#f3eee599;font-family:var(--sans);letter-spacing:.16em;margin-left:12px;font-size:10px}footer p{color:#f3eee5b8;font-family:var(--serif);margin:0;font-size:14px}footer a{letter-spacing:.1em;justify-self:end;font-size:11px}@media (width<=1100px){.main-nav{display:none}.site-header{grid-template-columns:1fr 1fr}.hero{min-height:auto}.hero-copy{grid-column:1/6;min-height:600px}.hero-visual{grid-column:6/13}.hero:before{left:42.5%}.story-content{grid-column:3/9}.story-visual{grid-column:8/13}.letter-list article{grid-template-columns:34px 115px 1fr}.visit-copy{padding-left:2vw}}@media (width<=760px){.site-header{min-height:72px;padding:0 20px}.header-note{display:none}.brand-cn{font-size:24px}.brand-en{font-size:8px}.hero{flex-direction:column;gap:54px;padding:48px 20px 24px;display:flex}.hero:before{display:none}.hero-copy{min-height:520px;padding:0}.hero h1{margin-top:58px;font-size:clamp(48px,15vw,68px)}.hero-intro{margin:auto 0 30px}.hero-visual figcaption{flex-direction:column;gap:5px}.section-shell{padding:84px 20px;display:block}.section-marker{margin-bottom:46px}.story-content h2,.section-heading h2,.team-intro h2{font-size:clamp(40px,12vw,58px)}.story-columns,.team-copy{grid-template-columns:1fr;gap:24px;margin-top:42px}.story-visual{margin-top:58px}.letters{padding:84px 20px;display:block}.letters blockquote{font-size:clamp(36px,10vw,52px)}.letter-list{margin-top:70px}.letter-list article{padding:26px 0;display:block}.letter-list h3{margin-top:12px}.letter-list p{margin-top:14px}.pour-moment{flex-direction:column-reverse;align-items:stretch;gap:54px;padding:84px 20px;display:flex}.pour-copy h2{font-size:clamp(46px,13vw,62px)}.pour-copy>p:last-child{margin-top:34px}.section-heading>p:last-child{margin-top:26px}.drink-grid{margin-top:70px;display:block}.drink-card{margin-bottom:72px}.drink-card:nth-child(2n){transform:none}.team-gallery{margin-top:70px;display:block}.team-gallery figure,.team-gallery figure:nth-child(2),.team-gallery figure:nth-child(3),.team-gallery figure:nth-child(4){margin:0 0 56px}.team-values{grid-template-columns:1fr;margin-top:62px}.team-values article,.team-values article+article{border-right:0;border-bottom:1px solid var(--line);min-height:0;padding:26px 0 30px}.team-values p{margin-top:20px}.visit{flex-direction:column;padding:84px 20px 64px;display:flex}.visit-copy{padding:0}.visit h2{font-size:clamp(56px,16vw,78px)}.visit-details{grid-template-columns:1fr;margin-top:44px}.visit-photo{margin-top:54px}footer{grid-template-columns:1fr auto;gap:24px;min-height:130px;padding:26px 20px}footer p{display:none}}@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,:before,:after{transition-duration:.01ms!important}}
-</style>
+<meta name="description" content="云南楚雄山喜咖啡。山里面，种着我喜欢的东西。">
+<link rel="shortcut icon" href="favicon.svg">
+<link rel="icon" href="favicon.svg">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-<main class="site">
-<a class="skip-link" href="#main-content">跳到主要内容</a>
-<header class="site-header">
-<a class="brand" href="#top" aria-label="山喜咖啡首页"><span class="brand-cn">山喜</span><span class="brand-en">SHANXI COFFEE</span></a>
-<nav class="main-nav" aria-label="主要导航"><a href="#story">故事</a><a href="#letters">来往</a><a href="#drinks">咖啡</a><a href="#team">我们</a><a href="#visit">到店</a></nav>
-<p class="header-note">CHUXIONG · YUNNAN</p>
-</header>
-<div id="main-content">
-<section class="hero" id="top">
-<div class="hero-copy"><p class="eyebrow">SHANXI COFFEE / 2026</p><h1>杯有欢喜，<br/>心有山喜。</h1><p class="hero-intro">山里面，种着我喜欢的东西。<br/>我们把咖啡种进山里，也把一处安静留在城市。</p><a class="text-link" href="#story">从名字开始认识山喜 <span>↘</span></a></div>
-<figure class="hero-visual"><div class="photo-crop photo-crop-hero"><img src="images/hero-sign.jpg" alt="夕阳与绿植围绕的山喜咖啡门店标识"/></div><figcaption><span>01 / THE FIRST VIEW</span><span>杯有欢喜，心有山喜</span></figcaption></figure>
-</section>
-<section class="story section-shell" id="story">
-<div class="section-marker"><span>01</span><span>我喜欢的东西</span></div>
-<div class="story-content"><p class="story-kicker">MOUNTAIN / JOY / COFFEE</p><h2>“山里面，<br/>种着我喜欢的东西。”</h2><div class="story-columns"><p>“山喜”这个名字由主理人的妈妈起下。山，是咖啡生长的地方；喜，是人对一件事真实而长久的喜欢。于是，山喜成为了把咖啡种进山里的想象。</p><p>这里没有把自然当成装饰。叶片、木头、光线和咖啡共同生长，像把山林的一小段带回城市，让人进门以后慢下来。</p></div></div>
-<figure class="story-visual"><div class="photo-crop photo-crop-garden"><img src="images/garden-table.jpg" alt="山喜咖啡窗边桌面与层叠绿植" loading="lazy"/></div><figcaption>02 / 山林中的「我喜欢的东西」</figcaption></figure>
-</section>
-<section class="letters" id="letters">
-<div class="letters-lead"><p class="eyebrow">LETTERS FROM THE SHOP</p><blockquote>那些送来的不只是照片，<br/>而是一封封写给这间小店的书信。</blockquote><p>发现美，是一种温柔的能力。真正让一间店活起来的，也不是一次精心陈列，而是人与人之间持续发生的来往。</p></div>
-<div class="letter-list"><article><span>01</span><h3>客人的一束光</h3><p>有人坐在靠窗的位置，看见阳光落在桌面、百叶窗和绿植上。照片从客人的视角寄回来，店也因此被重新看见。</p></article><article><span>02</span><h3>反复回来的日常</h3><p>有人来工作，有人来发呆，也有人只是喝完一杯再离开。那些普通到不会被特别记录的时刻，慢慢组成了山喜。</p></article><article><span>03</span><h3>写给小店的信</h3><p>一张照片、一句留言、一次打招呼，都是店与人之间的往返。它们记录的不是摆拍，而是真实生活曾经在这里发生。</p></article></div>
-</section>
-<section class="pour-moment" aria-label="吧台上的咖啡制作瞬间">
-<figure><img src="images/pour-over-ice.jpg" alt="咖啡从分享壶缓缓注入放有冰块的玻璃杯" loading="lazy"/><figcaption>BAR MOMENT / POUR, ICE &amp; TIME</figcaption></figure>
-<div class="pour-copy"><p class="eyebrow">A CUP IN THE MAKING</p><h2>一杯咖啡，<br/>正在发生。</h2><p>温度落进冰块，香气跟着液面慢慢展开。山喜珍惜的不是某个被摆好的结果，而是手、时间与材料真正相遇的这一刻。</p></div>
-</section>
-<section class="drinks section-shell" id="drinks">
-<div class="section-marker"><span>02</span><span>代表饮品</span></div>
-<div class="section-heading"><p class="eyebrow">FROM THE BAR</p><h2>先喝几杯，<br/>再慢慢认识山喜。</h2><p>完整菜单负责选择，代表饮品负责让人记住。这里不罗列所有品类，只留下风味、质地和故事最鲜明的几杯。</p></div>
-<div class="drink-grid">
-<article class="drink-card crop-left"><div class="drink-media"><img src="images/orange-flow.jpg" alt="橙可椰香流沙饮品" loading="lazy"/><span class="drink-index">01</span></div><div class="drink-title-row"><h3>橙可椰香流沙</h3><span>¥30</span></div><p class="drink-en">CITRUS · COCONUT · COFFEE</p><p class="drink-note">新鲜橙意、椰香与可可在杯中相遇。酸甜、醇厚与流沙般的层次，被放进同一杯里。</p></article>
-<article class="drink-card natural-landscape"><div class="drink-media"><img src="images/one-bean-two-new.jpg" alt="一豆两喝饮品" loading="lazy"/><span class="drink-index">02</span></div><div class="drink-title-row"><h3>一豆两喝</h3><span>¥28</span></div><p class="drink-en">ONE BEAN · TWO EXPRESSIONS</p><p class="drink-note">同一款咖啡豆，用两种温度与口感呈现。不是二选一，而是在一份里慢慢比较。</p></article>
-<article class="drink-card natural-portrait"><div class="drink-media"><img src="images/citrus.jpg" alt="橙 C 美式饮品" loading="lazy"/><span class="drink-index">03</span></div><div class="drink-title-row"><h3>橙 C 美式</h3><span>¥23 起</span></div><p class="drink-en">ORANGE C · AMERICANO</p><p class="drink-note">清亮的柑橘感与意式浓缩相叠，明快、干净，像一杯可以喝下去的早晨阳光。</p></article>
-<article class="drink-card natural-square"><div class="drink-media"><img src="images/super-snow-pine.jpg" alt="超级雪松饮品" loading="lazy"/><span class="drink-index">04</span></div><div class="drink-title-row"><h3>超级雪松</h3><span>¥38</span></div><p class="drink-en">CEDAR · ROSE · SIGNATURE</p><p class="drink-note">从雪松香气获得灵感的特调。木质气息、轻柔玫瑰与绵密泡沫，让味道也拥有空间感。</p></article>
-</div>
-</section>
-<section class="team section-shell" id="team">
-<div class="section-marker"><span>03</span><span>专业，不必严肃</span></div>
-<div class="team-intro"><p class="eyebrow">A DAY AT SHANXI</p><h2>认真做事，<br/>也认真开玩笑。</h2><div class="team-copy"><p>店里的专业，不是一开始就会。它来自称豆、磨豆、观察流速、记住时间，也来自出错以后再做一遍。手上的稳定，是一天一天练出来的。</p><p>但专业不等于时刻紧绷。吧台后会有互相提醒，也会有玩笑和合照。山喜的安静不是沉默，而是一种可以认真工作，也可以安心做自己的松弛。</p></div></div>
-<div class="team-gallery">
-<figure class="team-portrait-full"><div class="team-photo-frame"><img src="images/team-brand.jpg" alt="山喜咖啡员工站在山喜品牌字样旁" loading="lazy"/></div><figcaption><span>01</span>站在山喜旁边，也站在这间店每天发生的故事里。</figcaption></figure>
-<figure class="team-collage-half team-collage-top"><div class="team-photo-frame"><img src="images/team-collage.jpg" alt="山喜咖啡员工合照的上半张" loading="lazy"/></div><figcaption><span>02</span>合照的上半张：镜头靠近一点，人与人的距离也近一点。</figcaption></figure>
-<figure class="team-collage-half team-collage-bottom"><div class="team-photo-frame"><img src="images/team-collage.jpg" alt="山喜咖啡员工合照的下半张" loading="lazy"/></div><figcaption><span>03</span>合照的下半张：吧台前认真做事，也认真留下当时的样子。</figcaption></figure>
-<figure class="team-barista-work"><div class="team-photo-frame"><img src="images/team-barista.jpg" alt="山喜咖啡师在咖啡机前工作" loading="lazy"/></div><figcaption><span>04</span>回到吧台：专注制作的时候，专业落在每一个手上的细节里。</figcaption></figure>
-</div>
-<div class="team-values"><article><span>练习</span><p>不懂就学，不稳就再来一次。专业首先是一种诚实。</p></article><article><span>照应</span><p>高峰期彼此补位，忙完以后也给同伴留一点喘息。</p></article><article><span>松弛</span><p>不把所有人塑造成同一种样子，店才会真正像人一样活着。</p></article></div>
-</section>
-<section class="visit" id="visit">
-<div class="visit-copy"><p class="eyebrow">COME AND STAY A WHILE</p><h2>来坐一会儿。</h2><p class="visit-slogan">杯有欢喜，心有山喜。</p><p class="visit-description">靠窗的位置有光，也有一段可以慢下来的时间。喝咖啡、看书、工作或只是发一会儿呆，都不需要解释。</p><div class="visit-details"><div><span>地址 / ADDRESS</span><p>云南省楚雄市鹿城镇<br/>枫桥水郡北苑商铺 B6、B7</p></div><div><span>营业时间 / HOURS</span><p>每日 10:30—22:30</p></div></div></div>
-<figure class="visit-photo"><div class="photo-crop photo-crop-visit"><img src="images/visit-window.jpg" alt="山喜咖啡靠窗座位、百叶窗与窗外绿树" loading="lazy"/></div><figcaption>窗边 / LIGHT, WINDOW &amp; A SEAT</figcaption></figure>
-</section>
-</div>
-<footer><div class="footer-brand">山喜 <span>SHANXI COFFEE</span></div><p>杯有欢喜，心有山喜。</p><a href="#top">回到顶部 ↑</a></footer>
+<main class="reader-shell" id="reader">
+  <header class="reader-header">
+    <button class="wordmark" id="wordmark" aria-label="回到封面">山喜 <span>SHANXI COFFEE</span></button>
+    <button class="toc-button" id="tocBtn" aria-expanded="false">目录 <span aria-hidden="true">☰</span></button>
+  </header>
+
+  <section class="book-stage is-cover" id="stage" aria-live="polite">
+    <div class="book-shadow"></div>
+    <div class="book" id="book"></div>
+  </section>
+
+  <nav class="reader-controls" aria-label="翻页控制">
+    <button id="prevBtn" aria-label="上一页">←</button>
+    <div class="progress-wrap">
+      <span id="progressLeft">1</span>
+      <input type="range" min="0" max="15" value="0" id="slider" aria-label="跳转页码">
+      <span id="progressRight">16</span>
+    </div>
+    <button id="nextBtn" aria-label="下一页">→</button>
+  </nav>
+  <p class="gesture-hint">横向轻扫翻页 · 也可使用左右方向键</p>
+
+  <div class="toc-overlay" id="tocOverlay" role="dialog" aria-modal="true" aria-label="目录" hidden>
+    <button class="toc-backdrop" id="tocBackdrop" aria-label="关闭目录"></button>
+    <aside class="toc-panel">
+      <div class="toc-panel-head">
+        <div><p class="eyebrow">CONTENTS</p><h2>目录</h2></div>
+        <button id="tocClose" aria-label="关闭目录">×</button>
+      </div>
+      <ol id="tocList"></ol>
+    </aside>
+  </div>
 </main>
+
+<script>
+(function () {
+  var PAGES = [
+    {
+      chapter: "封面",
+      cls: "cover-page",
+      html: '<div class="cover-content">' +
+        '<p class="eyebrow cover-eyebrow">A STORY OF A SMALL COFFEE HOUSE</p>' +
+        '<div class="cover-title" aria-label="山喜"><span>山</span><span>喜</span></div>' +
+        '<p class="cover-en">SHANXI COFFEE</p>' +
+        '<div class="cover-rule"></div>' +
+        '<p class="cover-slogan">杯有欢喜，心有山喜</p>' +
+        '<p class="cover-place">云南 · 楚雄</p>' +
+        '</div>'
+    },
+    {
+      chapter: "序 · 一间小店",
+      cls: "",
+      html: '<div class="page-grid opening-grid">' +
+        '<div class="page-copy opening-copy">' +
+        '<p class="eyebrow">PROLOGUE</p>' +
+        '<h1 class="display-title">杯有欢喜<br>心有山喜</h1>' +
+        '<p class="lead">城市里有许多可以喝咖啡的地方，山喜更想成为一处让人愿意停下来、愿意再回来的地方。</p>' +
+        '<p>一杯咖啡从这里开始，也从人与人的相遇开始。它不急着解释自己，只把光、植物、木头和认真做好的一杯饮品，安静地放在你面前。</p>' +
+        '</div>' +
+        '<figure class="photo hero-photo"><img src="images/hero-sign.jpg" alt="山喜咖啡的店面与绿植" draggable="false"><figcaption>黄昏时，山喜亮起灯。</figcaption></figure>' +
+        '</div>'
+    },
+    {
+      chapter: "目录",
+      cls: "",
+      html: '<div class="contents-page">' +
+        '<p class="eyebrow">CONTENTS</p>' +
+        '<h2 class="section-title">目录</h2>' +
+        '<ol class="contents-list">' +
+        '<li><span>序 · 一间小店</span><i></i><b>02</b></li>' +
+        '<li><span>一 · 名字的来处</span><i></i><b>04</b></li>' +
+        '<li><span>二 · 写给山喜的信</span><i></i><b>06</b></li>' +
+        '<li><span>三 · 专业，不严肃</span><i></i><b>08</b></li>' +
+        '<li><span>四 · 杯中的欢喜</span><i></i><b>11</b></li>' +
+        '<li><span>附录 · 来坐一会儿</span><i></i><b>15</b></li>' +
+        '</ol>' +
+        '<p class="small-note">点击上方“目录”按钮，可直接抵达任一章节。</p>' +
+        '</div>'
+    },
+    {
+      chapter: "一 · 名字的来处",
+      cls: "",
+      html: '<div class="page-grid origin-grid">' +
+        '<div class="page-copy">' +
+        '<p class="eyebrow">THE NAME</p>' +
+        '<h2 class="display-title compact-title">山里面<br>种着我喜欢的东西</h2>' +
+        '<p class="dropcap">“山喜”这个名字，是主理人的妈妈起的。它没有复杂的典故，只是一句朴素又温柔的话：山里面，种着我喜欢的东西。</p>' +
+        '<p>如果把咖啡种进山里，也把喜欢的人、喜欢的音乐和喜欢的生活放进去，山喜便不只是一家店，而是一片可以被抵达的心境。</p>' +
+        '<blockquote>名字先有了温度，空间与咖啡才慢慢长成它的样子。</blockquote>' +
+        '</div>' +
+        '<figure class="photo tall-photo"><img src="images/space-green.jpg" alt="山喜咖啡窗外繁茂的绿植" draggable="false"><figcaption>山林中的“我喜欢的东西”。</figcaption></figure>' +
+        '</div>'
+    },
+    {
+      chapter: "一 · 名字的来处",
+      cls: "",
+      html: '<div class="image-led-page">' +
+        '<figure class="photo full-photo"><img src="images/garden-table.jpg" alt="山喜咖啡绿植旁的桌椅" draggable="false"></figure>' +
+        '<div class="image-caption-block">' +
+        '<p class="eyebrow">A GARDEN INSIDE</p>' +
+        '<h2>把自然留在室内</h2>' +
+        '<p>叶片把阳光筛得柔软，窗框把一段风景收进来。空间不需要刻意制造“松弛感”，当自然真正参与其中，人会自己慢下来。</p>' +
+        '</div>' +
+        '</div>'
+    },
+    {
+      chapter: "二 · 写给山喜的信",
+      cls: "rust-panel",
+      html: '<div class="statement-page rust-panel">' +
+        '<p class="eyebrow light">LETTERS TO A SMALL SHOP</p>' +
+        '<h2 class="statement-title light">发现美<br>是一种温柔的能力</h2>' +
+        '<p class="statement-copy light">客人送来的不只是照片，而是一封封写给这间小店的信。有人记录一束光，有人记住一张椅子，也有人写下一个陌生人的认真。</p>' +
+        '<span class="brush-mark" aria-hidden="true"></span>' +
+        '</div>'
+    },
+    {
+      chapter: "二 · 写给山喜的信",
+      cls: "",
+      html: '<div class="letters-page">' +
+        '<div class="letters-quote"><p>每一封信里</p><p>都藏着一双</p><p>善于发现美</p><p>的眼睛</p></div>' +
+        '<div class="letters-copy">' +
+        '<p>摄影师说，拍照是发现生活里的美。真正爱着什么的人，眼睛里会有光——不只是窗外投进来的光，也是从心底透出来的、热忱的光。</p>' +
+        '<p>所以这些照片被保留下来。它们提醒我们，寻常日子并不平淡；只要愿意俯下身看，微小的事物也会发亮。</p>' +
+        '<small>来自店内客人与朋友的记录</small>' +
+        '</div>' +
+        '</div>'
+    },
+    {
+      chapter: "三 · 专业，不严肃",
+      cls: "",
+      html: '<div class="page-grid people-intro-grid">' +
+        '<div class="page-copy">' +
+        '<p class="eyebrow">THE PEOPLE</p>' +
+        '<h2 class="display-title compact-title">专业<br>不严肃</h2>' +
+        '<p>山喜的认真并不板着脸。有人磨豆，有人拉花，有人记住熟客喜欢的味道，也有人把一次平常的上班，过成彼此照顾的日常。</p>' +
+        '<p>他们是三个人，也是同一间店的三种性格：专注、明亮、自由。咖啡因此有标准，也有人情。</p>' +
+        '</div>' +
+        '<figure class="photo portrait-complete"><img src="images/team-brand.jpg" alt="山喜成员站在品牌标志旁" draggable="false"><figcaption>人与店一起，成为山喜的样子。</figcaption></figure>' +
+        '</div>'
+    },
+    {
+      chapter: "三 · 专业，不严肃",
+      cls: "",
+      html: '<div class="collage-page">' +
+        '<figure class="photo collage-complete"><img src="images/team-collage.jpg" alt="山喜咖啡三位成员的两张合照" draggable="false"><figcaption>一张合照</figcaption></figure>' +
+        '<div class="collage-copy">' +
+        '<p class="eyebrow">TOGETHER</p>' +
+        '<h2>一张合照</h2>' +
+        '<p>两个瞬间被留在同一张底片里。镜头前后，他们仍然是店里最真实的样子：会认真，也会玩笑；会磨合，也会彼此成全。</p>' +
+        '</div>' +
+        '</div>'
+    },
+    {
+      chapter: "三 · 专业，不严肃",
+      cls: "",
+      html: '<div class="barista-page">' +
+        '<figure class="photo barista-photo"><img src="images/team-barista.jpg" alt="山喜咖啡师在咖啡机前工作" draggable="false"></figure>' +
+        '<div class="barista-copy">' +
+        '<p class="eyebrow">CRAFT</p>' +
+        '<h2>手会记住</h2>' +
+        '<p>研磨的刻度、萃取的时间、奶泡的温度，都要一次次试。熟练不是把人变成机器，而是让手终于有余裕，去照顾每一杯细微的差别。</p>' +
+        '<blockquote>专业，是把重复做出温度。</blockquote>' +
+        '</div>' +
+        '</div>'
+    },
+    {
+      chapter: "四 · 杯中的欢喜",
+      cls: "",
+      html: '<div class="pour-page">' +
+        '<figure class="photo pour-photo"><img src="images/pour-over-ice.jpg" alt="咖啡缓缓浇在透明杯中的冰块上" draggable="false"></figure>' +
+        '<div class="pour-copy">' +
+        '<p class="eyebrow">A CUP IN MOTION</p>' +
+        '<h2>一杯咖啡，也有自己的时间</h2>' +
+        '<p>液体落下，冰块把温度和光一起收住。山喜希望端上桌的，不只是一个配方，也是一小段值得观看、闻到和慢慢喝完的过程。</p>' +
+        '</div>' +
+        '</div>'
+    },
+    {
+      chapter: "四 · 杯中的欢喜",
+      cls: "",
+      html: '<div class="products-page">' +
+        '<p class="eyebrow">TWO CLASSICS</p>' +
+        '<div class="product-stack">' +
+        '<article class="product-row">' +
+        '<figure class="photo product-photo"><img src="images/americano.jpg" alt="橙C美式" draggable="false"></figure>' +
+        '<div><h2>橙 C 美式</h2><p>鲜橙的明亮酸甜，撞进美式的干净微苦，清爽不腻，一口见底。</p></div>' +
+        '</article>' +
+        '<article class="product-row reverse">' +
+        '<figure class="photo product-photo"><img src="images/shanxi-coffee.jpg" alt="山喜咖啡" draggable="false"></figure>' +
+        '<div><h2>山喜咖啡</h2><p>心有欢喜，杯有山喜。以细腻奶泡写下店名，让品牌真正落进一杯可以被喝掉的日常。</p></div>' +
+        '</article>' +
+        '</div>' +
+        '</div>'
+    },
+    {
+      chapter: "四 · 杯中的欢喜",
+      cls: "",
+      html: '<div class="products-page">' +
+        '<p class="eyebrow">HOUSE SELECTIONS</p>' +
+        '<div class="product-stack">' +
+        '<article class="product-row">' +
+        '<figure class="photo product-photo"><img src="images/super-snow-pine.jpg" alt="超级雪松" draggable="false"></figure>' +
+        '<div><h2>超级雪松</h2><p>木质调与淡淡玫瑰气息相遇，松枝与肉桂把森林的想象带到杯边。与咖啡搭配，成为“一豆两喝”的另一种体验。</p></div>' +
+        '</article>' +
+        '<article class="product-row reverse">' +
+        '<figure class="photo product-photo"><img src="images/orange-flow.jpg" alt="橙可椰香流沙" draggable="false"></figure>' +
+        '<div><h2>橙可椰香流沙</h2><p>新鲜橙香、榛果可可与柔和椰香碰撞。颜色明亮，味道却克制，是一杯带着山喜性格的奶咖。</p></div>' +
+        '</article>' +
+        '</div>' +
+        '</div>'
+    },
+    {
+      chapter: "五 · 光与植物",
+      cls: "",
+      html: '<div class="plant-page">' +
+        '<div class="trimmed-photo" role="img" aria-label="灯光穿过植物的叶片"></div>' +
+        '<div class="plant-copy">' +
+        '<p class="eyebrow">LIGHT &amp; LEAVES</p>' +
+        '<h2>光在叶片之间写字</h2>' +
+        '<p>店里的美常常没有中心。它可能只是一盏灯、几片叶子和墙面上的影子，却足以让人记住某个下午。</p>' +
+        '</div>' +
+        '</div>'
+    },
+    {
+      chapter: "附录 · 来坐一会儿",
+      cls: "",
+      html: '<div class="visit-page">' +
+        '<figure class="photo visit-photo"><img src="images/visit-window.jpg" alt="山喜咖啡窗边的座椅和阳光" draggable="false"></figure>' +
+        '<div class="visit-copy">' +
+        '<p class="eyebrow">COME AND STAY</p>' +
+        '<h2>来坐一会儿</h2>' +
+        '<p>靠窗的位置会接住下午的光。你可以工作、聊天，也可以什么都不做。这里不催促一杯咖啡应该怎样被喝完。</p>' +
+        '</div>' +
+        '</div>'
+    },
+    {
+      chapter: "附录",
+      cls: "",
+      html: '<div class="appendix-page">' +
+        '<p class="eyebrow">APPENDIX</p>' +
+        '<h2 class="display-title compact-title">欢迎来到<br>山喜</h2>' +
+        '<dl class="visit-details">' +
+        '<div><dt>地址</dt><dd>楚雄市鹿城镇枫桥水郡北苑商铺 B6、B7</dd></div>' +
+        '<div><dt>营业时间</dt><dd>10:30 — 22:30</dd></div>' +
+        '</dl>' +
+        '<div class="closing-rule"></div>' +
+        '<p class="closing-slogan">杯有欢喜，心有山喜</p>' +
+        '<p class="closing-note">愿你在城市里，也有一处可以安静坐下的山林。</p>' +
+        '</div>'
+    }
+  ];
+
+  var TOC = [
+    { label: "序 · 一间小店", page: 1 },
+    { label: "一 · 名字的来处", page: 3 },
+    { label: "二 · 写给山喜的信", page: 5 },
+    { label: "三 · 专业，不严肃", page: 7 },
+    { label: "四 · 杯中的欢喜", page: 10 },
+    { label: "附录 · 来坐一会儿", page: 14 }
+  ];
+
+  var total = PAGES.length;
+  var current = 0;
+  var isWide = window.matchMedia("(min-width: 900px)").matches;
+  var isTurning = false;
+  var dir = "forward";
+  var turnTimer = null;
+
+  var book = document.getElementById("book");
+  var stage = document.getElementById("stage");
+  var prevBtn = document.getElementById("prevBtn");
+  var nextBtn = document.getElementById("nextBtn");
+  var slider = document.getElementById("slider");
+  var progressLeft = document.getElementById("progressLeft");
+  var progressRight = document.getElementById("progressRight");
+  var tocOverlay = document.getElementById("tocOverlay");
+  var tocBtn = document.getElementById("tocBtn");
+  var tocList = document.getElementById("tocList");
+
+  function pad2(n) { return String(n).padStart(2, "0"); }
+
+  function normalize(e) {
+    var t = Math.max(0, Math.min(total - 1, e));
+    if (!isWide || t === 0) return t;
+    return t % 2 === 0 ? t - 1 : t;
+  }
+
+  function visiblePages(e) {
+    var isCover = e === 0;
+    if (isWide && !isCover) return [e, e + 1];
+    return [e];
+  }
+
+  function nextEnabled() {
+    if (isWide) return current === 0 || current + 1 < total - 1;
+    return current < total - 1;
+  }
+
+  function setTocOpen(open) {
+    tocOverlay.hidden = !open;
+    tocBtn.setAttribute("aria-expanded", String(open));
+  }
+
+  function buildToc() {
+    var html = '<li><button data-page="0"><span>封面</span><b>01</b></button></li>';
+    TOC.forEach(function (item) {
+      html += '<li><button data-page="' + item.page + '"><span>' + item.label + '</span><b>' + pad2(item.page + 1) + '</b></button></li>';
+    });
+    tocList.innerHTML = html;
+  }
+
+  function render() {
+    var isCover = current === 0;
+    var pages = visiblePages(current);
+    var html = "";
+
+    pages.forEach(function (pi, idx) {
+      var p = PAGES[pi];
+      if (!p) {
+        html += '<div class="book-page blank-page"></div>';
+        return;
+      }
+      var slot = idx === 0 ? "left-slot" : "right-slot";
+      var label = "第 " + (pi + 1) + " 页：" + p.chapter;
+      var cls = p.cls ? " " + p.cls : "";
+      var footer = "";
+      if (pi !== 0) {
+        footer = '<footer class="page-footer"><span>' + p.chapter + '</span><b>' + pad2(pi + 1) + '</b></footer>';
+      }
+      html += '<article class="book-page' + cls + ' ' + slot + '" aria-label="' + label + '">' +
+        '<div class="paper-grain" aria-hidden="true"></div>' +
+        '<div class="page-inner">' + p.html + '</div>' +
+        footer +
+        '</article>';
+    });
+
+    if (!isCover) {
+      html += '<div class="spine" aria-hidden="true"></div>';
+    }
+    html += '<button class="edge-hit previous-hit" aria-label="上一页"' + (current > 0 && !isTurning ? "" : " disabled") + '></button>';
+    html += '<button class="edge-hit next-hit" aria-label="下一页"' + (nextEnabled() && !isTurning ? "" : " disabled") + '></button>';
+
+    book.innerHTML = html;
+
+    var sc = "book-stage " + (isCover ? "is-cover" : "is-open");
+    if (isTurning) sc += " turning-" + dir;
+    stage.className = sc;
+
+    prevBtn.disabled = !(current > 0) || isTurning;
+    nextBtn.disabled = !nextEnabled() || isTurning;
+
+    progressLeft.textContent = (isWide && current > 0) ? (current + 1) + "–" + Math.min(current + 2, total) : String(current + 1);
+    progressRight.textContent = String(total);
+    slider.value = current;
+  }
+
+  function goTo(target, forcedDir) {
+    var i = normalize(target);
+    if (i === current || isTurning) return;
+    dir = forcedDir || (i > current ? "forward" : "backward");
+    isTurning = true;
+    current = i;
+    setTocOpen(false);
+    render();
+    if (turnTimer) clearTimeout(turnTimer);
+    turnTimer = setTimeout(function () {
+      isTurning = false;
+      render();
+    }, 560);
+  }
+
+  function next() { goTo(current + (isWide && current !== 0 ? 2 : 1), "forward"); }
+  function prev() { goTo(isWide && current > 1 ? current - 2 : current - 1, "backward"); }
+
+  document.getElementById("wordmark").addEventListener("click", function () { goTo(0, "backward"); });
+  tocBtn.addEventListener("click", function () { setTocOpen(true); });
+  document.getElementById("tocClose").addEventListener("click", function () { setTocOpen(false); });
+  document.getElementById("tocBackdrop").addEventListener("click", function () { setTocOpen(false); });
+  tocList.addEventListener("click", function (e) {
+    var btn = e.target.closest("button[data-page]");
+    if (!btn) return;
+    goTo(Number(btn.getAttribute("data-page")));
+  });
+
+  prevBtn.addEventListener("click", prev);
+  nextBtn.addEventListener("click", next);
+  slider.addEventListener("input", function () { goTo(Number(slider.value)); });
+
+  book.addEventListener("click", function (e) {
+    var btn = e.target.closest(".edge-hit");
+    if (!btn || btn.disabled) return;
+    if (btn.classList.contains("next-hit")) next(); else prev();
+  });
+
+  window.addEventListener("keydown", function (e) {
+    if (e.key === "ArrowRight") next();
+    else if (e.key === "ArrowLeft") prev();
+    else if (e.key === "Home") goTo(0, "backward");
+    else if (e.key === "End") goTo(total - 1, "forward");
+    else if (e.key === "Escape") setTocOpen(false);
+  });
+
+  var startPoint = null;
+  stage.addEventListener("pointerdown", function (e) {
+    startPoint = { x: e.clientX, y: e.clientY };
+    if (e.currentTarget.setPointerCapture) e.currentTarget.setPointerCapture(e.pointerId);
+  });
+  stage.addEventListener("pointerup", function (e) {
+    if (!startPoint) return;
+    var dx = e.clientX - startPoint.x;
+    var dy = e.clientY - startPoint.y;
+    startPoint = null;
+    if (Math.abs(dx) < 42 || Math.abs(dx) < Math.abs(dy) * 1.15) return;
+    if (dx < 0) next(); else prev();
+  });
+  stage.addEventListener("pointercancel", function () { startPoint = null; });
+
+  window.matchMedia("(min-width: 900px)").addEventListener("change", function (e) {
+    isWide = e.matches;
+    current = normalize(current);
+    render();
+  });
+
+  buildToc();
+  render();
+})();
+</script>
 </body>
 </html>
