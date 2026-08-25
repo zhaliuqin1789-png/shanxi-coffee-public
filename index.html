@@ -8,13 +8,19 @@
 <link rel="shortcut icon" href="favicon.svg">
 <link rel="icon" href="favicon.svg">
 <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="refinement.css">
 </head>
 <body>
 <main class="reader-shell" id="reader">
   <header class="reader-header">
     <button class="wordmark" id="wordmark" aria-label="回到封面">山喜 <span>SHANXI COFFEE</span></button>
-    <button class="toc-button" id="tocBtn" aria-expanded="false">目录 <span aria-hidden="true">☰</span></button>
+    <div class="header-actions">
+      <button class="music-button" id="musicBtn" aria-label="播放音乐" aria-pressed="false"><span class="music-dot" aria-hidden="true"></span><span id="musicLabel">音乐</span></button>
+      <button class="toc-button" id="tocBtn" aria-expanded="false">目录 <span aria-hidden="true">☰</span></button>
+    </div>
   </header>
+
+  <audio id="ambientAudio" preload="metadata" loop></audio>
 
   <section class="book-stage is-cover" id="stage" aria-live="polite">
     <div class="book-shadow"></div>
@@ -69,7 +75,7 @@
         '<p class="lead">城市里有许多可以喝咖啡的地方，山喜更想成为一处让人愿意停下来、愿意再回来的地方。</p>' +
         '<p>一杯咖啡从这里开始，也从人与人的相遇开始。它不急着解释自己，只把光、植物、木头和认真做好的一杯饮品，安静地放在你面前。</p>' +
         '</div>' +
-        '<figure class="photo hero-photo"><img src="images/hero-sign.jpg" alt="山喜咖啡的店面与绿植" draggable="false"><figcaption>黄昏时，山喜亮起灯。</figcaption></figure>' +
+        '<figure class="photo hero-photo"><img src="images/hero-sign-clean.jpg" alt="山喜咖啡的店面与绿植" draggable="false"><figcaption>黄昏时，山喜亮起灯。</figcaption></figure>' +
         '</div>'
     },
     {
@@ -79,12 +85,12 @@
         '<p class="eyebrow">CONTENTS</p>' +
         '<h2 class="section-title">目录</h2>' +
         '<ol class="contents-list">' +
-        '<li><span>序 · 一间小店</span><i></i><b>02</b></li>' +
-        '<li><span>一 · 名字的来处</span><i></i><b>04</b></li>' +
-        '<li><span>二 · 写给山喜的信</span><i></i><b>06</b></li>' +
-        '<li><span>三 · 专业，不严肃</span><i></i><b>08</b></li>' +
-        '<li><span>四 · 杯中的欢喜</span><i></i><b>11</b></li>' +
-        '<li><span>附录 · 来坐一会儿</span><i></i><b>15</b></li>' +
+        '<li><button data-page="1"><span>序 · 一间小店</span><i></i><b>02</b></button></li>' +
+        '<li><button data-page="3"><span>一 · 名字的来处</span><i></i><b>04</b></button></li>' +
+        '<li><button data-page="5"><span>二 · 写给山喜的信</span><i></i><b>06</b></button></li>' +
+        '<li><button data-page="7"><span>三 · 专业，不严肃</span><i></i><b>08</b></button></li>' +
+        '<li><button data-page="10"><span>四 · 杯中的欢喜</span><i></i><b>11</b></button></li>' +
+        '<li><button data-page="14"><span>附录 · 来坐一会儿</span><i></i><b>15</b></button></li>' +
         '</ol>' +
         '<p class="small-note">点击上方“目录”按钮，可直接抵达任一章节。</p>' +
         '</div>'
@@ -107,7 +113,7 @@
       chapter: "一 · 名字的来处",
       cls: "",
       html: '<div class="image-led-page">' +
-        '<figure class="photo full-photo"><img src="images/garden-table.jpg" alt="山喜咖啡绿植旁的桌椅" draggable="false"></figure>' +
+        '<figure class="photo full-photo"><img src="images/garden-table-clean.jpg" alt="山喜咖啡绿植旁的桌椅" draggable="false"></figure>' +
         '<div class="image-caption-block">' +
         '<p class="eyebrow">A GARDEN INSIDE</p>' +
         '<h2>把自然留在室内</h2>' +
@@ -166,7 +172,7 @@
       chapter: "三 · 专业，不严肃",
       cls: "",
       html: '<div class="barista-page">' +
-        '<figure class="photo barista-photo"><img src="images/team-barista.jpg" alt="山喜咖啡师在咖啡机前工作" draggable="false"></figure>' +
+        '<figure class="photo barista-photo"><img src="images/team-barista-clean.jpg" alt="山喜咖啡师在咖啡机前工作" draggable="false"></figure>' +
         '<div class="barista-copy">' +
         '<p class="eyebrow">CRAFT</p>' +
         '<h2>手会记住</h2>' +
@@ -211,7 +217,7 @@
         '<p class="eyebrow">HOUSE SELECTIONS</p>' +
         '<div class="product-stack">' +
         '<article class="product-row">' +
-        '<figure class="photo product-photo"><img src="images/super-snow-pine.jpg" alt="超级雪松" draggable="false"></figure>' +
+        '<figure class="photo product-photo"><img src="images/super-snow-pine-clean.jpg" alt="超级雪松" draggable="false"></figure>' +
         '<div><h2>超级雪松</h2><p>木质调与淡淡玫瑰气息相遇，松枝与肉桂把森林的想象带到杯边。与咖啡搭配，成为“一豆两喝”的另一种体验。</p></div>' +
         '</article>' +
         '<article class="product-row reverse">' +
@@ -237,7 +243,7 @@
       chapter: "附录 · 来坐一会儿",
       cls: "",
       html: '<div class="visit-page">' +
-        '<figure class="photo visit-photo"><img src="images/visit-window.jpg" alt="山喜咖啡窗边的座椅和阳光" draggable="false"></figure>' +
+        '<figure class="photo visit-photo"><img src="images/visit-window-clean.jpg" alt="山喜咖啡窗边的座椅和阳光" draggable="false"></figure>' +
         '<div class="visit-copy">' +
         '<p class="eyebrow">COME AND STAY</p>' +
         '<h2>来坐一会儿</h2>' +
@@ -288,6 +294,10 @@
   var tocOverlay = document.getElementById("tocOverlay");
   var tocBtn = document.getElementById("tocBtn");
   var tocList = document.getElementById("tocList");
+  var musicBtn = document.getElementById("musicBtn");
+  var musicLabel = document.getElementById("musicLabel");
+  var ambientAudio = document.getElementById("ambientAudio");
+  var AUDIO_SRC = window.SHANXI_AUDIO_SRC || "audio/shanxi-theme.mp3";
 
   function pad2(n) { return String(n).padStart(2, "0"); }
 
@@ -374,11 +384,16 @@
     current = i;
     setTocOpen(false);
     render();
+    var sheet = document.createElement("div");
+    sheet.className = "turn-sheet " + (dir === "forward" ? "turn-sheet-forward" : "turn-sheet-backward");
+    sheet.setAttribute("aria-hidden", "true");
+    sheet.innerHTML = '<span class="turn-sheet-face"></span><span class="turn-sheet-back"></span>';
+    book.appendChild(sheet);
     if (turnTimer) clearTimeout(turnTimer);
     turnTimer = setTimeout(function () {
       isTurning = false;
       render();
-    }, 560);
+    }, 760);
   }
 
   function next() { goTo(current + (isWide && current !== 0 ? 2 : 1), "forward"); }
@@ -392,6 +407,35 @@
     var btn = e.target.closest("button[data-page]");
     if (!btn) return;
     goTo(Number(btn.getAttribute("data-page")));
+  });
+
+  book.addEventListener("click", function (e) {
+    var chapterBtn = e.target.closest(".contents-list button[data-page]");
+    if (chapterBtn) {
+      goTo(Number(chapterBtn.getAttribute("data-page")));
+      return;
+    }
+  });
+
+  musicBtn.addEventListener("click", function () {
+    if (!ambientAudio.getAttribute("src")) ambientAudio.setAttribute("src", AUDIO_SRC);
+    if (ambientAudio.paused) {
+      ambientAudio.play().then(function () {
+        musicBtn.classList.add("is-playing");
+        musicBtn.setAttribute("aria-pressed", "true");
+        musicBtn.setAttribute("aria-label", "暂停音乐");
+        musicLabel.textContent = "暂停";
+      }).catch(function () {
+        musicLabel.textContent = "待加入";
+        musicBtn.classList.add("is-empty");
+      });
+    } else {
+      ambientAudio.pause();
+      musicBtn.classList.remove("is-playing");
+      musicBtn.setAttribute("aria-pressed", "false");
+      musicBtn.setAttribute("aria-label", "播放音乐");
+      musicLabel.textContent = "音乐";
+    }
   });
 
   prevBtn.addEventListener("click", prev);
