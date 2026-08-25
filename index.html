@@ -364,6 +364,13 @@
 
     book.innerHTML = html;
 
+    Array.prototype.forEach.call(book.querySelectorAll(".contents-list button[data-page]"), function (chapterBtn) {
+      chapterBtn.addEventListener("click", function (event) {
+        event.stopPropagation();
+        goTo(Number(chapterBtn.getAttribute("data-page")));
+      });
+    });
+
     var sc = "book-stage " + (isCover ? "is-cover" : "is-open");
     if (isTurning) sc += " turning-" + dir;
     stage.className = sc;
