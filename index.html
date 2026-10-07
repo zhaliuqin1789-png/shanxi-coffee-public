@@ -15,12 +15,9 @@
   <header class="reader-header">
     <button class="wordmark" id="wordmark" aria-label="回到封面">山喜 <span>SHANXI COFFEE</span></button>
     <div class="header-actions">
-      <button class="music-button" id="musicBtn" aria-label="播放音乐" aria-pressed="false"><span class="music-dot" aria-hidden="true"></span><span id="musicLabel">音乐</span></button>
       <button class="toc-button" id="tocBtn" aria-expanded="false">目录 <span aria-hidden="true">☰</span></button>
     </div>
   </header>
-
-  <audio id="ambientAudio" preload="metadata" loop></audio>
 
   <section class="book-stage is-cover" id="stage" aria-live="polite">
     <div class="book-shadow"></div>
@@ -294,10 +291,6 @@
   var tocOverlay = document.getElementById("tocOverlay");
   var tocBtn = document.getElementById("tocBtn");
   var tocList = document.getElementById("tocList");
-  var musicBtn = document.getElementById("musicBtn");
-  var musicLabel = document.getElementById("musicLabel");
-  var ambientAudio = document.getElementById("ambientAudio");
-  var AUDIO_SRC = window.SHANXI_AUDIO_SRC || "audio/shanxi-theme.mp3";
 
   function pad2(n) { return String(n).padStart(2, "0"); }
 
@@ -421,27 +414,6 @@
     if (chapterBtn) {
       goTo(Number(chapterBtn.getAttribute("data-page")));
       return;
-    }
-  });
-
-  musicBtn.addEventListener("click", function () {
-    if (!ambientAudio.getAttribute("src")) ambientAudio.setAttribute("src", AUDIO_SRC);
-    if (ambientAudio.paused) {
-      ambientAudio.play().then(function () {
-        musicBtn.classList.add("is-playing");
-        musicBtn.setAttribute("aria-pressed", "true");
-        musicBtn.setAttribute("aria-label", "暂停音乐");
-        musicLabel.textContent = "暂停";
-      }).catch(function () {
-        musicLabel.textContent = "待加入";
-        musicBtn.classList.add("is-empty");
-      });
-    } else {
-      ambientAudio.pause();
-      musicBtn.classList.remove("is-playing");
-      musicBtn.setAttribute("aria-pressed", "false");
-      musicBtn.setAttribute("aria-label", "播放音乐");
-      musicLabel.textContent = "音乐";
     }
   });
 
